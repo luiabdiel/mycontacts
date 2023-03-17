@@ -18,11 +18,11 @@ yarn dev
 
 The API has the following routes:
 
-- POST /contacts: creates a new contact
-- GET /contacts: lists all contacts
-- GET /contacts/:id: shows a specific contact
-- PUT /contacts/:id: updates a contact
-- DELETE /contacts/:id: deletes a contact
+- POST /contacts -> creates a new contact
+- GET /contacts -> lists all contacts
+- GET /contacts/: id -> shows a specific contact
+- PUT /contacts/: id -> updates a contact
+- DELETE /contacts/: id: ->deletes a contact
 
 Contact data is saved to an array in memory
 
