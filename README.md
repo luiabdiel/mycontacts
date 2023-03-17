@@ -24,7 +24,7 @@ The API has the following routes:
 - PUT /contacts/: id -> updates a contact
 - DELETE /contacts/: id: ->deletes a contact
 
-Contact data is saved to an array in memory
+Contact data is saved to an array in memory.
 
 ## Contribution
 
