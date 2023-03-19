@@ -30,6 +30,21 @@ class CategoryController {
 
     response.json(category);
   }
+
+  async update(request, response) {
+    const { id } = request.params;
+    const { name } = request.body;
+
+    const categoryExists = await CategoriesRepository.findById(id);
+
+    if (categoryExists && categoryExists.id !== id) {
+      return response.status(400).json({ error: 'This category is already in use' });
+    }
+
+    const category = await CategoriesRepository.update(id, { name });
+
+    response.json(category);
+  }
 }
 
 module.exports = new CategoryController();
