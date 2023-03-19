@@ -12,7 +12,6 @@ module.exports = {
   },
   rules: {
     'class-methods-use-this': 'off',
-    'no-unused-vars': 'off',
     'import/no-extraneous-dependencies': 'off',
     'consistent-return': 'off',
     camelcase: 'off',
